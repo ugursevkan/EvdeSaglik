@@ -480,6 +480,18 @@ pre {
   margin-right: auto;
   margin-left: auto; }
 
+.btn-Blog{
+  border-radius: 12px;
+  color: white;
+  height: 30px;
+  font-size: 14px;
+  background-color: rgb(47, 137, 252);
+  
+}
+.btn-Blog:hover{
+  color: rgb(47, 137, 252);
+  background-color: white;
+}
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8303,6 +8315,9 @@ textarea.form-control {
 .ftco-bg-dark {
   background: #3c312e; }
 
+.logo{
+  margin-left: -30px;
+}
 .ftco-footer {
   font-size: 16px;
   background: #191919;
