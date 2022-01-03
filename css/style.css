@@ -486,7 +486,6 @@ pre {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-right: -15px;
   margin-left: -15px; }
 
 .no-gutters {
@@ -7544,7 +7543,7 @@ h1, h2, h3, h4, h5,
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center center;
-      height: 700px;
+      height: 500px;
       position: relative; }
       .owl-carousel.home-slider .slider-item .overlay {
         position: absolute;
@@ -7897,44 +7896,8 @@ h1, h2, h3, h4, h5,
 
 .gallery {
   display: block;
-  height: 450px;
-  position: relative; }
-  .gallery .icon {
-    width: 50px;
-    height: 50px;
-    margin: 0 auto;
-    z-index: 0;
-    opacity: 0;
-    position: relative;
-    -moz-transition: all 0.6s ease;
-    -o-transition: all 0.6s ease;
-    -webkit-transition: all 0.6s ease;
-    -ms-transition: all 0.6s ease;
-    transition: all 0.6s ease; }
-    .gallery .icon:after {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      width: 50px;
-      height: 50px;
-      content: '';
-      background: #2f89fc;
-      z-index: -1;
-      -moz-transition: all 0.6s ease;
-      -o-transition: all 0.6s ease;
-      -webkit-transition: all 0.6s ease;
-      -ms-transition: all 0.6s ease;
-      transition: all 0.6s ease; }
-    .gallery .icon span {
-      color: #fff; }
-  .gallery:hover .icon, .gallery:focus .icon {
-    opacity: 1; }
-    .gallery:hover .icon:after, .gallery:focus .icon:after {
-      -webkit-transform: rotate(135deg);
-      -ms-transform: rotate(135deg);
-      transform: rotate(135deg); }
+  height: 510px;
+  position: sticky; }
 
 .ftco-section-parallax {
   position: relative; }
