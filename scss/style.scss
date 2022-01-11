@@ -208,6 +208,45 @@ h1, h2, h3, h4, h5,
 		letter-spacing: .1em;
 	}
 	
+	.container-gallery {
+		display: flex;
+		width: 100%;
+		padding: 4% 2%;
+		box-sizing: border-box;
+		height: 100vh;
+	  }
+	  
+	  .box-gallery {
+		flex: 1;
+		overflow: hidden;
+		transition: .5s;
+		margin: 0 2%;
+		box-shadow: 0 20px 30px rgba(0,0,0,.1);
+		line-height: 0;
+	  }
+	  
+	  .box-gallery > img {
+		width: 200%;
+		height: calc(100% - 10vh);
+		object-fit: cover; 
+		transition: .5s;
+	  }
+	  
+	  .box-gallery > span {
+		font-size: 3.8vh;
+		display: block;
+		text-align: center;
+		height: 10vh;
+		line-height: 2.6;
+	  }
+	  
+	  .box-gallery:hover { flex: 1 1 50%; }
+	  .box-gallery:hover > img {
+		width: 100%;
+		height: 100%;
+	  }
+	   
+
 	&.scrolled  {
 		position: fixed;
 		right: 0;
@@ -681,63 +720,6 @@ h1, h2, h3, h4, h5,
 				}
 			}
 		}
-	}
-}
-
-
-//GALLERY
-.ftco-gallery{
-}
-.gallery{
-	display: block;
-	height: 450px;
-	position: relative;
-	.icon{
-		width: 50px;
-		height: 50px;
-		margin: 0 auto;
-		z-index: 0;
-		opacity: 0;
-		position: relative;
-		@include transition(.6s);
-		&:after{
-			position: absolute;
-			top: 0;
-			left: 0;
-			right: 0;
-			bottom: 0;
-			width: 50px;
-			height: 50px;
-			content: '';
-			background: $primary;
-			z-index: -1;
-			@include transition(.6s);
-		}
-		span{
-			color: $white;
-		}
-	}
-	&:hover, &:focus{
-		.icon{
-			opacity: 1;
-			&:after{
-				transform: rotate(135deg);
-			}
-		}
-	}	
-}
-
-
-
-.ftco-section-parallax {
-	position: relative;
-	.parallax-img {
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: center center;
-		position: relative;
-		padding: 4em 0;
-		@include gradient-background();
 	}
 }
 
