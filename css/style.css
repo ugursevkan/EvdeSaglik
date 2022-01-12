@@ -473,10 +473,6 @@ pre {
     .container {
       max-width: 1140px; } }
 
-.navbar-wrapper {
-  margin-left: 30px;
-}
-
 .container-fluid {
   width: 100%;
   padding-right: 15px;
@@ -3315,6 +3311,7 @@ input[type="button"].btn-block {
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
   margin-right: 1rem;
+  margin-left: 30px !important;
   font-size: 28px !important;
   line-height: inherit;
   white-space: nowrap; }
